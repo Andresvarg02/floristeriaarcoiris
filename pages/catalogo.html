@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Floristería Arcoíris</title>
+    
+    <!-- Ruta relativa para los estilos globales -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=500;600;700&family=Poppins:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (Iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==========================
+            HEADER / MENÚ
+    ========================== -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="../index.html" class="logo">
+                <img src="../img/logo/logo-horizontal.png" alt="Floristería Arcoíris">
+            </a>
+
+            <!-- Navegación -->
+            <nav class="menu">
+                <ul class="menu-lista">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botones de Acción -->
+            <button id="navCartBtn" class="cart-icon-btn" style="cursor: pointer;">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartBadge" class="cart-badge">0</span>
+            </button>
+                <a href="https://wa.me/573004022461" target="_blank" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================
+        BANNER DE PRESENTACIÓN
+    ========================== -->
+    <section class="banner-interno">
+        <div class="container">
+            <h1>Nuestro Catálogo Completo</h1>
+            <p>Explora nuestras categorías y encuentra el diseño ideal para cada ocasión.</p>
+        </div>
+    </section>
+
+    <!-- ==========================
+        SECCIÓN PRINCIPAL DEL CATÁLOGO
+    ========================== -->
+    <section class="catalogo-seccion container">
+        
+        <div class="catalogo-layout">
+            <!-- Barra Lateral / Filtros Actualizados -->
+            <aside class="filtros-sidebar">
+                <h3>Categorías</h3>
+                <ul class="lista-filtros">
+                    <li><a href="#" class="filtro-item activo" data-categoria="todos">Todos los artículos</a></li>
+                    <li><a href="#" class="filtro-item" data-categoria="arreglos">Arreglos Florales (5)</a></li>
+                    <li><a href="#" class="filtro-item" data-categoria="mesas">Centros de Mesa (6)</a></li>
+                    <li><a href="#" class="filtro-item" data-categoria="detalles">Detalles Sorpresa (7)</a></li>
+                    <li><a href="#" class="filtro-item" data-categoria="funebres">Fúnebres (21)</a></li>
+                    <li><a href="#" class="filtro-item" data-categoria="ramilletes">Ramilletes (5)</a></li>
+                </ul>
+            </aside>
+
+        <!-- Grilla de Productos Dinámica con todos sus artículos numerados -->
+            <main class="grid-productos">
+                
+                <!-- ==========================================================================
+                    ARREGLOS FLORALES (21 ARTÍCULOS)
+                    ========================================================================== -->
+                <!--    
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/dulceamor.jpg" alt="Dulce Amor"></div>
+                    <div class="producto-info"><h4>Dulce Amor</h4><p class="descripcion-corta">36 rosas, Caja de chocolate, 2 barras de chocolate, globo metalizado y peluche mediano.</p><div class="producto-footer"><span class="precio">$265,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/celebracion.jpg" alt="Celebración"></div>
+                    <div class="producto-info"><h4>Celebración</h4><p class="descripcion-corta">36 Rosas (Color preferencia); 3 cartuchos; 3 aves del paraíso; follaje.</p><div class="producto-footer"><span class="precio">$195,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>-->
+    <!-- ==========================================================================
+    LEYENDA ARREGLOS FLORALES
+    ========================================================================== -->
+<div class="banner-informativo-funebres" data-cat="arreglos">
+    <div class="banner-contenido">
+        <div class="banner-icono">
+            🌸
+        </div>
+
+        <div class="banner-texto">
+            <h4>🌸 Haz que cada momento florezca 🌸</h4>
+
+            <p>
+                Cada flor cuenta una historia, y cada arreglo que creamos está lleno de amor,
+                frescura y detalle.
+            </p>
+
+            <p>
+                🌷 Cumpleaños<br>
+                🌹 Aniversarios<br>
+                💖 Fechas especiales<br>
+                🎉 Celebraciones<br>
+                ✨ O simplemente para decir: “Estoy pensando en ti”
+            </p>
+        </div>
+    </div>
+</div>
+
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/ritmotropical.jpg" alt="Ritmo Tropical"></div>
+                    <div class="producto-info"><h4>Ritmo Tropical</h4><p class="descripcion-corta">Arreglo con 36 rosas (Color preferencia), follaje, frutas, globo metalizado, vino.</p><div class="producto-footer"><span class="precio">$240,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <!--
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/portaldeamor.jpg" alt="Portal de Amor"></div>
+                    <div class="producto-info"><h4>Portal de Amor</h4><p class="descripcion-corta">Hermoso Arreglo Floral con 24 Rosas (color preferencia) y frutas.</p><div class="producto-footer"><span class="precio">$185,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>-->
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/quiereme.jpg" alt="Quiéreme"></div>
+                    <div class="producto-info"><h4>Quiéreme</h4><p class="descripcion-corta">32 rosas (Color preferencia), 5 girasoles, 1 champaña, Frutas, Follaje.</p><div class="producto-footer"><span class="precio">$310,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/portaldeamor2.jpg" alt="Portal de Amor 2"></div>
+                    <div class="producto-info"><h4>Portal de Amor 2</h4><p class="descripcion-corta">Hermoso Arreglo Floral con 24 Rosas (color preferencia), follaje, champaña, frutas.</p><div class="producto-footer"><span class="precio">$215,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/rosaeterna.jpg" alt="Rosa Eterna"></div>
+                    <div class="producto-info"><h4>Rosa Eterna</h4><p class="descripcion-corta">Hermosa Rosa, que tiene una duración aproximada de 2 años. Viene en diferentes colores.</p><div class="producto-footer"><span class="precio">$195,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <!--
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/buendia.jpg" alt="Buen Día!"></div>
+                    <div class="producto-info"><h4>Buen Día!</h4><p class="descripcion-corta">Elaborado con 12 girasoles, Follaje, Base.</p><div class="producto-footer"><span class="precio">$160,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/celebracion1.jpg" alt="Celebración 1"></div>
+                    <div class="producto-info"><h4>Celebración 1</h4><p class="descripcion-corta">Elaborado con 36 Rosas surtidas, 2 flores exóticas, follaje, globo burbuja.</p><div class="producto-footer"><span class="precio">$215,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/dulceencanto1.jpg" alt="Dulce Encanto 1"></div>
+                    <div class="producto-info"><h4>Dulce Encanto 1</h4><p class="descripcion-corta">9 girasoles, 7 rosas (color preferencia), 1 vino, 1 caja de chocolates, follaje.</p><div class="producto-footer"><span class="precio">$200,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/unica.jpg" alt="Única"></div>
+                    <div class="producto-info"><h4>Única</h4><p class="descripcion-corta">Arreglo elaborado con 18 rosas (color preferencia), 3 chocolates en barra, 1 globo metalizado, follaje.</p><div class="producto-footer"><span class="precio">$160,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/inolvidable1.jpg" alt="Inolvidable 1"></div>
+                    <div class="producto-info"><h4>Inolvidable 1</h4><p class="descripcion-corta">Arreglo elaborado con 24 rosas (color preferencia), Margaritas o pompón, 1 Girasol, Follaje 1, 1 Globo metalizado.</p><div class="producto-footer"><span class="precio">$165,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>-->
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/ritmotropical1.jpg" alt="Ritmo Tropical 1"></div>
+                    <div class="producto-info"><h4>Ritmo Tropical 1</h4><p class="descripcion-corta">Arreglo con 26 rosas (Color preferencia), 3 girasoles, 1 gladiolo, follajer, 4 frutas.</p><div class="producto-footer"><span class="precio">$210,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <!--
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/inolvidable2.jpg" alt="Inolvidable 2"></div>
+                    <div class="producto-info"><h4>Inolvidable 2</h4><p class="descripcion-corta">Arreglo elaborado con 24 rosas (color preferencia), 1 Girasol, tres manzanas, 1 Globo metalizado y follajes.</p><div class="producto-footer"><span class="precio">$170,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/dulceencanto2.jpg" alt="Dulce Encanto 2"></div>
+                    <div class="producto-info"><h4>Dulce Encanto 2</h4><p class="descripcion-corta">Arreglo floral con 8 girasoles, follaje, 1 caja de chocolates.</p><div class="producto-footer"><span class="precio">$170,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/concarino1.jpg" alt="Con Cariño 1"></div>
+                    <div class="producto-info"><h4>Con Cariño 1</h4><p class="descripcion-corta">Caja con 24 rosas, follaje.</p><div class="producto-footer"><span class="precio">$190,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/fiesta1.jpg" alt="Fiesta 1"></div>
+                    <div class="producto-info"><h4>Fiesta 1</h4><p class="descripcion-corta">Arreglo floral con 24 rosas rojas, follaje, manzanas, globo metalizado.</p><div class="producto-footer"><span class="precio">$170,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/fiesta2.jpg" alt="Fiesta 2"></div>
+                    <div class="producto-info"><h4>Fiesta 2</h4><p class="descripcion-corta">Arreglo floral con 24 rosas (color preferencia), follaje, 1 caja de chocolates de 4 bombones.</p><div class="producto-footer"><span class="precio">$185,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/celebracion2.jpg" alt="Celebración 2"></div>
+                    <div class="producto-info"><h4>Celebración 2</h4><p class="descripcion-corta">Arreglo floral con 60 rosas (color preferencia), Exóticas y follaje.</p><div class="producto-footer"><span class="precio">$310,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/sorpresa1.jpg" alt="Sorpresa 1"></div>
+                    <div class="producto-info"><h4>Sorpresa 1</h4><p class="descripcion-corta">Caja decorada con 12 rosas (color preferencia), follaje, 4 cajas de chocolates surtidos, sixpack de cerveza, 1 toker decorativos.</p><div class="producto-footer"><span class="precio">$180,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="arreglos">
+                    <div class="producto-img"><img src="../img/catalogo/osoconflores.jpg" alt="Oso con flores"></div>
+                    <div class="producto-info"><h4>Oso con flores</h4><p class="descripcion-corta">Arreglo floral elaborado con: flores en fomy, luz led, 1 caja de chocolates.</p><div class="producto-footer"><span class="precio">$150,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>-->
+
+                <!-- ==========================================================================
+                    CENTROS DE MESA (6 ARTÍCULOS)
+                ========================================================================== -->
+
+<!-- ==========================================================================
+    LEYENDA CENTROS DE MESA
+    ========================================================================== -->
+<div class="banner-informativo-funebres" data-cat="mesas">
+    <div class="banner-contenido">
+        <div class="banner-icono">
+            🌷
+        </div>
+
+        <div class="banner-texto">
+            <h4>🌷 Centros de Mesa — El toque mágico que transforma tu evento</h4>
+
+            <p>
+                Decora tus mesas con elegancia y frescura.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+                <div class="tarjeta-producto" data-cat="mesas">
+                    <div class="producto-img"><img src="../img/catalogo/artificial.jpg" alt="Artificial"></div>
+                    <div class="producto-info"><h4>Artificial</h4><p class="descripcion-corta">Contiene flores artficiales. Forma: Alargado.</p><div class="producto-footer"><span class="precio">$150,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="mesas">
+                    <div class="producto-img"><img src="../img/catalogo/redondonatural.jpg" alt="Centro de Mesa Redondo Natural"></div>
+                    <div class="producto-info"><h4>Centro de Mesa Redondo Natural</h4><p class="descripcion-corta">Elaborado con 12 rosas (color preferencia), follaje.</p><div class="producto-footer"><span class="precio">$90,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="mesas">
+                    <div class="producto-img"><img src="../img/catalogo/alargado.jpg" alt="Centro de Mesa Alargado"></div>
+                    <div class="producto-info"><h4>Centro de Mesa Alargado</h4><p class="descripcion-corta">Contiene rosas, hortensias, follaje.</p><div class="producto-footer"><span class="precio">$105,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="mesas">
+                    <div class="producto-img"><img src="../img/catalogo/redondoartificial.jpg" alt="Centro de Mesa Redondo Artificial"></div>
+                    <div class="producto-info"><h4>Centro de Mesa Redondo Artificial</h4><p class="descripcion-corta">Precio por unidad.</p><div class="producto-footer"><span class="precio">$100,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="mesas">
+                    <div class="producto-img"><img src="../img/catalogo/arreglolateral.jpg" alt="Arreglo Lateral"></div>
+                    <div class="producto-info"><h4>Arreglo Lateral</h4><p class="descripcion-corta">Para uso decorativo en iglesias y ceremonias</p><div class="producto-footer"><span class="precio">$120,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+                <div class="tarjeta-producto" data-cat="mesas">
+                    <div class="producto-img"><img src="../img/catalogo/mesaalargado.jpg" alt="Centro de Mesa Alargado"></div>
+                    <div class="producto-info"><h4>Centro de Mesa Alargado</h4><p class="descripcion-corta">80 cm de diámetro.</p><div class="producto-footer"><span class="precio">$110,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div>
+                </div>
+
+                <!-- ==========================================================================
+                    DETALLES SORPRESA (21 ARTÍCULOS)
+                    ========================================================================== -->
+                <!-- Repetición de bloques del 1 al 21 para Detalles Sorpresa -->
+                <!--
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/teamo.jpg" alt="Te Amo"></div><div class="producto-info"><h4>Te Amo</h4><p class="descripcion-corta">Globo metalizado, 6 cervezas, caja de chocolate, 2 maní, 2 chocolates en barra, Base de madera.</p><div class="producto-footer"><span class="precio">$135,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+
+<!-- ==========================================================================
+    LEYENDA DETALLES SORPRESA
+    ========================================================================== -->
+<div class="banner-informativo-funebres" data-cat="detalles">
+    <div class="banner-contenido">
+        <div class="banner-icono">
+            🎁
+        </div>
+
+        <div class="banner-texto">
+            <h4>✨ ¡Sorprende a esa persona especial! 🎁</h4>
+
+            <p>
+                Hay momentos que merecen ser recordados, y nada lo hace mejor que un
+                detalle pensado con el corazón.
+            </p>
+
+            <p>
+                💝 Detalles personalizados
+            </p>
+        </div>
+    </div>
+</div>
+
+
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/acercate.jpg" alt="Acércate"></div><div class="producto-info"><h4>Acércate</h4><p class="descripcion-corta">6 coronitas, 10 dulces variados, 3 globos, base de madera, lazo decorativo.</p><div class="producto-footer"><span class="precio">$130,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/meriendasopresa1.jpg" alt="Merienda Sorpresa 1"></div><div class="producto-info"><h4>Merienda Sorpresa 1</h4><p class="descripcion-corta">Frutas variadas, jugo de naranja, dedito horneado o sándwich, girasol o globo metalizado.</p><div class="producto-footer"><span class="precio">$80,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/meriendasopresa.jpg" alt="Merienda Sorpresa"></div><div class="producto-info"><h4>Merienda Sorpresa</h4><p class="descripcion-corta">Contiene: 1 jugo de naranja, 1 sándwich o dedito horneado, 1 manzana, 1 mandarina, fresas, lazo decorativo.</p><div class="producto-footer"><span class="precio">$60,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/sabroso.jpg" alt="Sabroso"></div><div class="producto-info"><h4>Sabroso</h4><p class="descripcion-corta">Contiene: 1 globo metalizado, 3 girasoles, 2 frutas, 1 te, 1 bonyurt, 1 sándwich, 1 jugo.</p><div class="producto-footer"><span class="precio">$130,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+                
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/accesorios.jpg" alt="Accesorios"></div><div class="producto-info"><h4>Accesorios</h4><p class="descripcion-corta">Billetera de mano, juego de cadenitas mas aretes, empacado en bolsa de regalo.</p><div class="producto-footer"><span class="precio">$120,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/sabroso1.jpg" alt="Sabroso 1"></div><div class="producto-info"><h4>Sabroso 1</h4><p class="descripcion-corta">Contiene: 3 girasoles, 2 frutas, 1 te, 1 bonyurt, 1 sándwich, 1 jugo.</p><div class="producto-footer"><span class="precio">$125,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/meriendasorpresa2.jpg" alt="Merienda Sorpresa 2"></div><div class="producto-info"><h4>Merienda Sorpresa 2</h4><p class="descripcion-corta">Contiene: 1 girasol, 1 dedito, 3 frutas, 1 jugo, 2 accesorios (tobillera y aretes).</p><div class="producto-footer"><span class="precio">$125,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/alegria.jpg" alt="Alegria"></div><div class="producto-info"><h4>Alegría</h4><p class="descripcion-corta">Contiene: 4 cervezas, 1 Papa Pringles pequeña, 1 chocolate en barra, 1 globo metalizado.</p><div class="producto-footer"><span class="precio">$100,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/milagrodeamor.jpg" alt="Milagro de Amor"></div><div class="producto-info"><h4>Milagro de Amor</h4><p class="descripcion-corta">Contiene: 1 peluche pequeño, 3 dulces, 6 rosas(Color preferencia), follaje, un tocker y lazo decorativo.</p><div class="producto-footer"><span class="precio">$140,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/gracias.jpg" alt="Gracias"></div><div class="producto-info"><h4>Gracias!</h4><p class="descripcion-corta">Contiene: 1 Gorra, 5 dulces, 4 cervezas, 1 globo metalizado.</p><div class="producto-footer"><span class="precio">$175,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/teelijo.jpg" alt="Te Elijo"></div><div class="producto-info"><h4>Te Elijo</h4><p class="descripcion-corta">Contiene: 12 rosas (Color preferencia), follaje, 4 cervezas (2 en lata y 2 en botella), 3 bombones de chocolate.</p><div class="producto-footer"><span class="precio">$110,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/dicelo.jpg" alt="Dícelo"></div><div class="producto-info"><h4>Dícelo</h4><p class="descripcion-corta">Contiene: 1 globo burbuja, 2 globos metalizados medianos, 6 rosas(cualquier color), follaje, 1 fruta, 2 chocolates, peluche mediano.</p><div class="producto-footer"><span class="precio">$185,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/festejo.jpg" alt="Festejo"></div><div class="producto-info"><h4>Festejo</h4><p class="descripcion-corta">Contiene: imagenes personalizadas, 3 globos metalizados, 1 sándwich, 1 bandeja de empanaditas y deditos, 1 fruta, 1 jugo de naranja, 1 bonyurt.</p><div class="producto-footer"><span class="precio">$140,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/poramor.jpg" alt="Por Amor"></div><div class="producto-info"><h4>Por Amor</h4><p class="descripcion-corta">Contiene: 1 peluche mediano, 2 cajas de chocolates por 4 bombones, papel envoltorio y lazo.</p><div class="producto-footer"><span class="precio">$160,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/frutero.jpg" alt="Frutero"></div><div class="producto-info"><h4>Frutero</h4><p class="descripcion-corta">Contiene: 8 tipos de frutas.</p><div class="producto-footer"><span class="precio">$130,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/promesa.jpg" alt="Promesa"></div><div class="producto-info"><h4>Promesa</h4><p class="descripcion-corta">Contiene: 1 globo metalizado, peluche mediano, botella de crema de whisky, 4 dulces.</p><div class="producto-footer"><span class="precio">$165,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/sweets1.jpg" alt="Sweets 1"></div><div class="producto-info"><h4>Sweets 1</h4><p class="descripcion-corta">Contiene: 12 dulces variados, 1 globo metalizdo, caja decorativa.</p><div class="producto-footer"><span class="precio">$140,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/frutero1.jpg" alt="Frutero 1"></div><div class="producto-info"><h4>Frutero 1</h4><p class="descripcion-corta">Contiene: 8 frutas y 3 girasoles.</p><div class="producto-footer"><span class="precio">$155,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/contigo.jpg" alt="Contigo"></div><div class="producto-info"><h4>Contigo</h4><p class="descripcion-corta">Contiene: 2 cervezas, 1 torta pequeña, 2 maní, 1 globo metalizado, caja decorativa, lazo.</p><div class="producto-footer"><span class="precio">$130,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="detalles"><div class="producto-img"><img src="../img/catalogo/sweets.jpg" alt="Sweets"></div><div class="producto-info"><h4>Sweets</h4><p class="descripcion-corta">Contiene: 20 dulces, 3 globos metalizados, base de madera.</p><div class="producto-footer"><span class="precio">$155,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+
+
+
+<!-- ==========================================================================
+    LEYENDA ARREGLOS FÚNEBRES
+    ========================================================================== -->
+<div class="banner-informativo-funebres" data-cat="funebres">
+    <div class="banner-contenido">
+        <div class="banner-icono">
+            🕊️
+        </div>
+
+        <div class="banner-texto">
+            <h4>🕊️ Un homenaje lleno de respeto y amor 🤍</h4>
+
+            <p>
+                En momentos de profunda tristeza, las flores se convierten en un
+                lenguaje de amor, paz y eterno agradecimiento hacia quien ya no está.
+            </p>
+
+            <p>
+                Ideales para expresar sus condolencias y acompañar a familiares
+                y seres queridos.
+            </p>
+        </div>
+    </div>
+</div>
+                <!-- ==========================================================================
+    AVISO INFORMATIVO DE DOMICILIOS FÚNEBRES
+    ========================================================================== -->
+<div class="banner-informativo-funebres" data-cat="funebres">
+    <div class="banner-contenido">
+        <div class="banner-icono">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+        </div>
+        <div class="banner-texto">
+            <h4><i class="fa-solid fa-circle-info"></i> Información Importante sobre Entregas Fúnebres</h4>
+            <p>El valor del domicilio para las siguientes sedes variará según la distancia exacta y no se calcula bajo la tarifa estándar:</p>
+            <ul class="lista-funerarias">
+                <li><i class="fa-solid fa-location-dot"></i> Funeraria Jardines de la Eternidad (Sede Norte)</li>
+                <li><i class="fa-solid fa-location-dot"></i> Funeraria Jardines de la Eternidad (Sede Sur)</li>
+                <li><i class="fa-solid fa-location-dot"></i> Funeraria Los Olivos (Sede Norte)</li>
+                <li><i class="fa-solid fa-location-dot"></i> Funeraria La Paz (Sede Norte)</li>
+                <li><i class="fa-solid fa-location-dot"></i> Funerarias del Municipio de Soledad</li>
+            </ul>
+            <p class="banner-contacto">Para cotizar el envío o resolver dudas, contáctanos directamente vía <strong>WhatsApp al 3004022461</strong>.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==========================================================================
+    FÚNEBRES (PRODUCTOS)
+    ========================================================================== -->
+<!-- Arreglo Fúnebre 1 limpiado sin la nota dentro -->
+<div class="tarjeta-producto" data-cat="funebres">
+    <div class="producto-img"><img src="../img/catalogo/bonitorecuerdo.jpg" alt="Bonito Recuerdo"></div>
+    <div class="producto-info">
+        <h4>Bonito Recuerdo</h4>
+        <p class="descripcion-corta">Corona redonda en pompón o margaritas con aplicación en rosas y cinta marcada.</p>
+        <div class="producto-footer">
+            <span class="precio">$220.000</span>
+            <button class="btn-añadir"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+</div>
+
+<div class="tarjeta-producto" data-cat="funebres">
+    <div class="producto-img"><img src="../img/catalogo/bendicion.jpg" alt="Bendición"></div>
+    <div class="producto-info">
+        <h4>Bendición</h4>
+        <p class="descripcion-corta">Corazón con aplique en rosas, fondo en margarita o pompón, con cinta marcada.</p>
+        <div class="producto-footer">
+            <span class="precio">$210,000</span>
+            <button class="btn-añadir"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+</div>
+
+                <!-- Bloques fúnebres del 3 al 21 estándar -->
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/nosvemos.jpg" alt="Nos Vemos"></div><div class="producto-info"><h4>Nos Vemos</h4><p class="descripcion-corta">Corona redonda con aplicación en rosas, elaborada en margarita o pompón, dracenas y cinta marcada.</p><div class="producto-footer"><span class="precio">$165,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/consumacion.jpg" alt="Consumación"></div><div class="producto-info"><h4>Consumación</h4><p class="descripcion-corta">Arreglo fúnebre con pedestal elaborado con 48 rosas (color de preferencia), follaje, lazo.</p><div class="producto-footer"><span class="precio">$340,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/caminoalcielo.jpg" alt="Camino al Cielo"></div><div class="producto-info"><h4>Camino al Cielo</h4><p class="descripcion-corta">Elaborado en margarita o pompón y rosas.</p><div class="producto-footer"><span class="precio">$300,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/lucero.jpg" alt="Lucero"></div><div class="producto-info"><h4>Lucero</h4><p class="descripcion-corta">Arreglo fúnebre, elaborado con 30 rosas (según preferencia de color), follaje, lazo.</p><div class="producto-footer"><span class="precio">$195,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/sentimiento.jpg" alt="Sentimiento"></div><div class="producto-info"><h4>Sentimiento</h4><p class="descripcion-corta">Arreglo fúnebre en forma redonda, elaborado en margarita o pompón con aplicación en rosas.</p><div class="producto-footer"><span class="precio">$145,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/consumacion1.jpg" alt="Consumación 1"></div><div class="producto-info"><h4>Consumación 1</h4><p class="descripcion-corta">Arreglo fúnebre elaborado con 48 rosas (color de preferencia), cinta marcada, follaje, base de atril.</p><div class="producto-footer"><span class="precio">$350,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/condolencia.jpg" alt="Condolencia"></div><div class="producto-info"><h4>Condolencia</h4><p class="descripcion-corta">Arreglo fúnebre elaborado con 36 rosas (color disponible), follaje, atril o pedestal, cinta marcada.</p><div class="producto-footer"><span class="precio">$210,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/lazodeamor.jpg" alt="Lazo de Amor"></div><div class="producto-info"><h4>Lazo de Amor</h4><p class="descripcion-corta">Corona elaborada en: Margaritas o Pompones, aplicación 3 rosas (color de preferencia), 2 canción de la india, follaje y cinta marcada.</p><div class="producto-footer"><span class="precio">$155,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/terminacion.jpg" alt="Terminación"></div><div class="producto-info"><h4>Terminación</h4><p class="descripcion-corta">Arreglo fúnebre elaborado con: 36 rosas (color de preferencia), 2 girasoles, follaje, cinta marcada y pedestal.</p><div class="producto-footer"><span class="precio">$235,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/atrildeluto.jpg" alt="Atril de luto"></div><div class="producto-info"><h4>Atril de luto</h4><p class="descripcion-corta">Arreglo fúnebre elaborado en margaritas o pompones (color con disponibilidad), follaje, pedestal.</p><div class="producto-footer"><span class="precio">$250,00</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/sentimiento1.jpg" alt="Sentimiento 1"></div><div class="producto-info"><h4>Sentimiento 1</h4><p class="descripcion-corta">Corona redonda elaborada en hortensia con aplicación en 12 rosas, follaje.</p><div class="producto-footer"><span class="precio">$165,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/caminoalcielo1.jpg" alt="Camino al Cielo 1"></div><div class="producto-info"><h4>Camino al Cielo 1</h4><p class="descripcion-corta">Arreglo fúnebre elaborado con 24 rosas (según preferencia de color), margaritas, lirios, follaje y pedestal.</p><div class="producto-footer"><span class="precio">$315,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/coronagrande.jpg" alt="Corona Grande"></div><div class="producto-info"><h4>Corona Grande</h4><p class="descripcion-corta">Corona redonda en margarita o pompón con aplique con 6 rosas y 3 hortensias.</p><div class="producto-footer"><span class="precio">$170,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/sudarioreconocimiento1.jpg" alt="Sudario de Reconocimiento 1"></div><div class="producto-info"><h4>Sudario de Reconocimiento 1</h4><p class="descripcion-corta">Arreglo fúnebre elaborado en margaritas o pompón, follaje y cinta marcada.</p><div class="producto-footer"><span class="precio">$130,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/bendicion1.jpg" alt="Bendición 1"></div><div class="producto-info"><h4>Bendición 1</h4><p class="descripcion-corta">Arreglo fúnebre en forma de corazon elaborado en margaritas o pompón, aplicación en rosas(color de preferencia y disponibilidad), follaje.</p><div class="producto-footer"><span class="precio">$200,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/enmemoria.jpg" alt="En Memoria"></div><div class="producto-info"><h4>En Memoria</h4><p class="descripcion-corta">Arreglo fúnebre elaborado en forma redonda con fully o pompón chiroso, follaje, aplicación 24 rosas(color de prefencia y disponibilidad), cinta marcada en pedestal.</p><div class="producto-footer"><span class="precio">$250,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/eternidad.jpg" alt="Eternidad"></div><div class="producto-info"><h4>Eternidad</h4><p class="descripcion-corta">Arreglo fúnebre en forma de corazon elaborado con 48 rosas, follaje.</p><div class="producto-footer"><span class="precio">$260,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/amoreterno.jpg" alt="Amor Eterno"></div><div class="producto-info"><h4>Amor Eterno</h4><p class="descripcion-corta">Arreglo fúnebre elaborado con aplicación rosas (según color de preferencia), 2 girasoles, margaritas o pompón, cinta marcada.</p><div class="producto-footer"><span class="precio">$210,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="funebres"><div class="producto-img"><img src="../img/catalogo/teextrano.jpg" alt="Te Extraño"></div><div class="producto-info"><h4>Te Extraño</h4><p class="descripcion-corta">Arreglo fúnebre, Corona redonda elaborada en margaritas o pompón(según disponibilidad), follaje.</p><div class="producto-footer"><span class="precio">$160,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+
+                <!-- ==========================================================================
+                RAMILLETES (21 ARTÍCULOS)
+                ========================================================================== -->
+<!-- ==========================================================================
+    LEYENDA RAMILLETES
+    ========================================================================== -->
+<div class="banner-informativo-funebres" data-cat="ramilletes">
+    <div class="banner-contenido">
+        <div class="banner-icono">
+            💐
+        </div>
+
+        <div class="banner-texto">
+            <h4>💐 Ramilletes, sencillos, hermosos y llenos de encanto.</h4>
+
+            <p>
+                El equilibrio ideal entre frescura, elegancia y delicadeza.
+            </p>
+
+            <p>
+                Perfectos para regalar en cumpleaños, aniversarios, celebraciones
+                o simplemente para alegrarle el día a alguien. 🥰
+            </p>
+        </div>
+    </div>
+</div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/sonrisa1.jpg" alt="Sonrisa 1"></div><div class="producto-info"><h4>Sonrisa 1</h4><p class="descripcion-corta">Ramillete elaborado con 7 girasoles, follaje, papel decorativo y lazo.</p><div class="producto-footer"><span class="precio">$125,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/rayodeamor.jpg" alt="Rayo de Amor"></div><div class="producto-info"><h4>Rayo de Amor</h4><p class="descripcion-corta">Ramillete elaborado con 24 (según color de preferencia) y globo.</p><div class="producto-footer"><span class="precio">$115,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/felizdia.jpg" alt="Feliz Día"></div><div class="producto-info"><h4>Feliz Día</h4><p class="descripcion-corta">Ramillete con 12 rosas(según color de preferencia), 4 bombones de chocolate, 1 peluche pequeño, papel envoltorio y lazo.</p><div class="producto-footer"><span class="precio">$120,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/enamorado.jpg" alt="Enamorado"></div><div class="producto-info"><h4>Enamorado</h4><p class="descripcion-corta">Ramillete elaborado con 24 rosas, peluche pequeño, globo metalizado, 2 chocolates en Barra, papel y lazo Decorativo.</p><div class="producto-footer"><span class="precio">$135,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/enamorado2.jpg" alt="Enamorado 2"></div><div class="producto-info"><h4>Enamorado 2</h4><p class="descripcion-corta">Ramillete elaborado con 25 rosas, peluche o Billetera de Mano y globo mediano, caja de chocolate.</p><div class="producto-footer"><span class="precio">$200,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/imaginate.jpg" alt="Imagínate"></div><div class="producto-info"><h4>Imagínate</h4><p class="descripcion-corta">Ramillete elaborado con 60 Rosas con follaje más 8 bombones de chocolates.</p><div class="producto-footer"><span class="precio">$300,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/divino.jpg" alt="Divino"></div><div class="producto-info"><h4>Divino</h4><p class="descripcion-corta">Ramillete con 30 rosas ( según disponibilidad de color), envoltorio, lazo.</p><div class="producto-footer"><span class="precio">$130,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/felizdia1.jpg" alt="Feliz Día 1"></div><div class="producto-info"><h4>Feliz Día 1</h4><p class="descripcion-corta">Ramillete con 20 rosas (color de preferencia) peluche pequeño, 4 bombines de chocolate.</p><div class="producto-footer"><span class="precio">$140,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/rosal.jpg" alt="Rosal"></div><div class="producto-info"><h4>Rosal</h4><p class="descripcion-corta">Ramillete elaborado con 140 rosas.</p><div class="producto-footer"><span class="precio">$500,00</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/laduena.jpg" alt="La dueña"></div><div class="producto-info"><h4>La dueña</h4><p class="descripcion-corta">Ramillete elaborado con 24 rosas.</p><div class="producto-footer"><span class="precio">$110,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/bonita1.jpg" alt="Bonita 1"></div><div class="producto-info"><h4>Bonita 1</h4><p class="descripcion-corta">Ramillete elaborado con 15 rosas, 2 chocolates, follaje, tela y lazo decorativo.</p><div class="producto-footer"><span class="precio">$100,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/bonita.jpg" alt="Bonita"></div><div class="producto-info"><h4>Bonita</h4><p class="descripcion-corta">Ramillete con 15 rosas, follaje, papel y lazo decorativo.</p><div class="producto-footer"><span class="precio">$85,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/amame.jpg" alt="Amame"></div><div class="producto-info"><h4>Amame</h4><p class="descripcion-corta">Ramillete elaborado con: 4 Girasoles, 1 canción de la India, follaje, papel y lazo decorativo.</p><div class="producto-footer"><span class="precio">$110,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/dulzura.jpg" alt="Dulzura"></div><div class="producto-info"><h4>Dulzura</h4><p class="descripcion-corta">Ramillete elaborado con 2 girasoles, 4 Rosas (según color de preferencia y disponibilidad) Follaje, Envoltura y Lazo.</p><div class="producto-footer"><span class="precio">$90,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/infinito.jpg" alt="Infinito"></div><div class="producto-info"><h4>Infinito</h4><p class="descripcion-corta">Ramillete elaborado con 24 Rosas (color de preferencia y disponibilidad), en oasis, follaje, globo metalizado, envoltura y lazo.</p><div class="producto-footer"><span class="precio">$155,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/mananadeamor.jpg" alt="Mañana de Amor"></div><div class="producto-info"><h4>Mañana de Amor</h4><p class="descripcion-corta">Ramillete elaborado con 18 Rosas (color de preferencia y disponibilidad), Follaje envoltura y lazo.</p><div class="producto-footer"><span class="precio">$110,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/encanto1.jpg" alt="Encanto 1"></div><div class="producto-info"><h4>Encanto 1</h4><p class="descripcion-corta">Ramillete elaborado con: 12 Rosas (color de preferencia y disponibilidad), 1 lirio, Envoltura y Lazo.</p><div class="producto-footer"><span class="precio">$95,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/encanto2.jpg" alt="Encanto 2"></div><div class="producto-info"><h4>Encanto 2</h4><p class="descripcion-corta">Ramillete elaborado con 12 Rosas (color de preferencia y disponibilidad), Peluche pequeño, envoltura y lazo.</p><div class="producto-footer"><span class="precio">$155,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/infinito1.jpg" alt="Infinito1"></div><div class="producto-info"><h4>Infinito1</h4><p class="descripcion-corta">Ramillete con base en oasis, envoltura con papel coreano, 14 rosas (según color y disponibilidad), lazo.</p><div class="producto-footer"><span class="precio">$110,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/mananadeamor1.jpg" alt="Mañana de Amor 1"></div><div class="producto-info"><h4>Mañana de Amor 1</h4><p class="descripcion-corta">Ramillete elaborado con 18 Rosas (color según preferencia y disponibilidad), Follaje, Envoltura y Lazo. Champagne.</p><div class="producto-footer"><span class="precio">$145,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                <!--
+                <div class="tarjeta-producto" data-cat="ramilletes"><div class="producto-img"><img src="../img/catalogo/dulzura1.jpg" alt="Dulzura 1"></div><div class="producto-info"><h4>Dulzura 1</h4><p class="descripcion-corta">Ramillete elaborado con: 4 Rosas (color de preferencia y disponibilidad), 1 Girasol, Follaje, 1 Barra de Chocolate, Papel Envoltorio y Lazo.</p><div class="producto-footer"><span class="precio">$95,000</span><button class="btn-añadir"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                -->
+            </main>
+        </div>
+    </section>
+
+    <!-- ==========================
+            FOOTER (PIE DE PÁGINA)
+    ========================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            
+            <!-- Columna 1 -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="../img/logo/isotipo.png" alt="Floristería Arcoíris Logotipo">
+                </div>
+                <ul class="info-lista">
+                    <li>Telefono: 3004022461</li>
+                    <li>Barranquilla, Atlántico – Colombia</li>
+                </ul>
+                <div class="footer-redes">
+                    <a href="https://www.facebook.com/arcoirisfl/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/arcoiris.tr?igsh=a3hhM2ljNTViOWdo" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/573004022461" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@arcoirisfl?_r=1&_t=ZS-987qPZH6nR6" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="footer-col">
+                <h3>NOSOTROS</h3>
+                <ul>
+                    <li><a href="nosotros.html#mision">Misión</a></li>
+                    <li><a href="nosotros.html#vision">Visión</a></li>
+                    <li><a href="nosotros.html#clientes">Nuestros Clientes</a></li>
+                    <li><a href="terminos.html">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3 (Filtros limpiados aquí también) -->
+            <div class="col-footer">
+    <h3>CATEGORÍAS</h3>
+    <div class="selector-categoria-footer">
+        <select name="categorias-select" id="categoriasSelect">
+            <option value="">Selecciona una categoría</option>
+            <option value="arreglos">Arreglos Florales</option>
+            <option value="mesas">Centros de Mesa</option>
+            <option value="detalles">Detalles Sorpresa</option>
+            <option value="funebres">Fúnebres</option>
+            <option value="ramilletes">Ramilletes</option>
+        </select>
+        <button id="btnSelectorFooter" class="btn-selector" type="button">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Floristería Arco íris. Barranquilla, Colombia - Términos y Condiciones - Política de Privacidad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal del Carrito -->
+<div id="modalCarrito" class="modal-carrito" style="display: none;">
+    <div class="modal-contenido">
+        <span id="cerrarCarrito" class="cerrar-modal">&times;</span>
+        <h2>Tu Carrito de Compras</h2>
+        
+        <div id="listaProductosCarrito"></div>
+        
+        <div class="total-contenedor">
+            <strong>Total:</strong> <span id="totalPrecioCarrito">$0</span>
+        </div>
+
+        <textarea id="notaPedido" placeholder="Nota o comentario opcional..."></textarea>
+        
+        <button id="btnEnviarWhatsApp" class="btn-whatsapp-modal">
+            <i class="fa-brands fa-whatsapp"></i> Confirmar Pedido por WhatsApp
+        </button>
+    </div>
+</div>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/carrito.js"></script>
+
+    <!-- ==========================================
+     VISUALIZADOR DE IMÁGENES
+     ========================================== -->
+
+<div class="modal-imagen" id="modalImagen">
+
+    <span class="cerrar-modal" id="cerrarModal">&times;</span>
+
+    <img id="imagenAmpliada" src="" alt="Imagen ampliada">
+
+</div>
+
+<script>
+    // Obtener elementos del visualizador
+    const modalImagen = document.getElementById("modalImagen");
+    const imagenAmpliada = document.getElementById("imagenAmpliada");
+    const cerrarModal = document.getElementById("cerrarModal");
+
+    // Obtener todas las imágenes de los productos
+    const imagenesProductos = document.querySelectorAll(".producto-img img");
+
+    // Abrir imagen al hacer clic
+    imagenesProductos.forEach(function(imagen) {
+
+        imagen.addEventListener("click", function() {
+
+            modalImagen.style.display = "flex";
+
+            imagenAmpliada.src = this.src;
+
+            imagenAmpliada.alt = this.alt;
+
+        });
+
+    });
+
+    // Cerrar con la X
+    cerrarModal.addEventListener("click", function() {
+
+        modalImagen.style.display = "none";
+
+        imagenAmpliada.src = "";
+
+    });
+
+    // Cerrar haciendo clic fuera de la imagen
+    modalImagen.addEventListener("click", function(event) {
+
+        if (event.target === modalImagen) {
+
+            modalImagen.style.display = "none";
+
+            imagenAmpliada.src = "";
+
+        }
+
+    });
+
+    // Cerrar presionando ESC
+    document.addEventListener("keydown", function(event) {
+
+        if (event.key === "Escape") {
+
+            modalImagen.style.display = "none";
+
+            imagenAmpliada.src = "";
+
+        }
+
+    });
+</script>
+</body>
+</html>

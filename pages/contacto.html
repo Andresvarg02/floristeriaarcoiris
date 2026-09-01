@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Floristería Arcoíris</title>
+    
+    <!-- Ruta relativa para los estilos comunes -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=500;600;700&family=Poppins:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (Iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==========================
+            HEADER / MENÚ
+    ========================== -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="../index.html" class="logo">
+                <img src="../img/logo/logo-horizontal.png" alt="Floristería Arcoíris">
+            </a>
+
+            <!-- Navegación -->
+            <nav class="menu">
+                <ul class="menu-lista">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botones de Acción -->
+            <div class="acciones">
+            <a href="https://wa.me/573004022461" target="_blank" class="btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+            </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================
+        BANNER DE PRESENTACIÓN
+    ========================== -->
+    <section class="banner-interno">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte a crear momentos inolvidables. ¡Escríbenos!</p>
+        </div>
+    </section>
+
+    <!-- ==========================
+        SECCIÓN PRINCIPAL DE CONTACTO
+    ========================== -->
+    <section class="contacto-seccion container">
+        <div class="grid-contacto">
+            
+            <!-- Bloque Izquierdo: Información de Atención -->
+            <div class="info-contacto">
+                <h2>¡Ponte en contacto con nosotros!</h2>
+                <p class="descripcion-contacto">Si tienes dudas sobre un pedido personalizado, cobertura de entregas o eventos especiales, usa cualquiera de nuestros canales oficiales.</p>
+                
+                <div class="canales-atencion">
+                    <!-- Canal Teléfono -->
+                    <div class="canal-item">
+                        <div class="canal-icono"><i class="fa-solid fa-phone"></i></div>
+                        <div class="canal-texto">
+                            <h3>Teléfono / WhatsApp</h3>
+                            <p>3004022461</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Canal Ubicación -->
+                    <div class="canal-item">
+                        <div class="canal-icono"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="canal-texto">
+                            <h3>Ubicación</h3>
+                            <p>Barranquilla, Atlántico – Colombia</p>
+                        </div>
+                    </div>
+
+                    <!-- Canal Horario -->
+                    <div class="canal-item">
+                        <div class="canal-icono"><i class="fa-solid fa-clock"></i></div>
+                        <div class="canal-texto">
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque Derecho: Formulario redirigido a WhatsApp mediante JS -->
+            <div class="formulario-contacto">
+                <h3>Envíanos un mensaje</h3>
+                <form id="formContacto">
+                    <div class="grupo-input">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" placeholder="Ej. María Pérez" required>
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" placeholder="Ej. maria@correo.com" required>
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" placeholder="Ej. Cotización evento / Duda catálogo" required>
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" rows="5" placeholder="Escribe aquí tu consulta en detalle..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar-formulario">Enviar Mensaje</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================
+            FOOTER (PIE DE PÁGINA)
+    ========================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            
+            <!-- Columna 1: Información y Redes -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="../img/logo/isotipo.png" alt="Floristería Arcoíris Logotipo">
+                </div>
+                <ul class="info-lista">
+                    <li>Telefono: 3004022461</li>
+                    <li>Barranquilla, Atlántico – Colombia</li>
+                </ul>
+                <div class="footer-redes">
+                    <a href="https://www.facebook.com/arcoirisfl/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/arcoiris.tr?igsh=a3hhM2ljNTViOWdo" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/573004022461" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@arcoirisfl?_r=1&_t=ZS-987qPZH6nR6" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: NOSOTROS -->
+            <div class="footer-col">
+                <h3>NOSOTROS</h3>
+                <ul>
+                    <li><a href="nosotros.html#mision">Misión</a></li>
+                    <li><a href="nosotros.html#vision">Visión</a></li>
+                    <li><a href="nosotros.html#clientes">Nuestros Clientes</a></li>
+                    <li><a href="terminos.html">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+        <div class="col-footer">
+    <h3>CATEGORÍAS</h3>
+    <div class="selector-categoria-footer">
+        <select name="categorias-select" id="categoriasSelect">
+            <option value="">Selecciona una categoría</option>
+            <option value="arreglos">Arreglos Florales</option>
+            <option value="mesas">Centros de Mesa</option>
+            <option value="detalles">Detalles Sorpresa</option>
+            <option value="funebres">Fúnebres</option>
+            <option value="ramilletes">Ramilletes</option>
+        </select>
+        <button id="btnSelectorFooter" class="btn-selector" type="button">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Floristería Arco íris. Barranquilla, Colombia - Términos y Condiciones - Política de Privacidad</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('formContacto').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const asunto = document.getElementById('asunto').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const numeroTelefono = "573004022461";
+
+            const textoMensaje = `*Nueva Consulta - Floristería Arcoíris*\n\n` +
+                                 `- *Nombre:* ${nombre}\n` +
+                                 `- *Correo:* ${correo}\n` +
+                                 `- *Asunto:* ${asunto}\n\n` +
+                                `*Mensaje:*\n${mensaje}`;
+
+            const urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(textoMensaje)}`;
+
+            window.open(urlWhatsApp, '_blank');
+        });
+    </script>
+    <script src="../js/productos.js"></script>
+</body>
+</html>

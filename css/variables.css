@@ -1,0 +1,35 @@
+/* ===========================
+VARIABLES GLOBALES
+=========================== */
+
+:root{
+
+    /* COLORES */
+
+    --rosa-principal:#F48FB1;
+    --rosa-secundario:#F8BBD0;
+    --rosa-claro:#FFF5F8;
+
+    --dorado:#C89B3C;
+
+    --texto:#333333;
+
+    --blanco:#FFFFFF;
+
+    --gris:#777777;
+
+    --gris-claro:#F4F4F4;
+
+    /* SOMBRAS */
+
+    --sombra-suave:0 4px 20px rgba(0,0,0,.08);
+
+    /* BORDES */
+
+    --radio:18px;
+
+    /* TRANSICIONES */
+
+    --transicion:.3s;
+
+}
